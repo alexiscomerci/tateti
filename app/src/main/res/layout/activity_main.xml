@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bBegin">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/player_1"
+                android:textSize="@dimen/tv_font_size" />
+
+            <EditText
+                android:id="@+id/etPlayer1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/enter_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:textColorHint="#78909C"
+                android:textSize="@dimen/et_font_size" />
+
+            <TextView
+                android:id="@+id/tvPlayer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/player_2"
+                android:textSize="@dimen/tv_font_size" />
+
+            <TextView
+                android:id="@+id/tvPlayer2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/player_2_name"
+                android:textSize="@dimen/et_font_size" />
+
+            <TextView
+                android:id="@+id/tvPlayer1Option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/player_1_plays_with"
+                android:textSize="@dimen/tv_font_size" />
+
+            <RadioGroup
+                android:id="@+id/rgPlayer1Option"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
+
+                <RadioButton
+                    android:id="@+id/rbCrosses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/crosses"
+                    android:onClick="setPlayer1Option"/>
+
+                <RadioButton
+                    android:id="@+id/rbCircles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/circles"
+                    android:onClick="setPlayer1Option"/>
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bBegin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:enabled="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minHeight="60dip"
+        android:onClick="startGame"
+        android:text="@string/begin"
+        app:cornerRadius="0dp" />
+
+</RelativeLayout>

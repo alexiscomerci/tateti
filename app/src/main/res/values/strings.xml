@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TaTeTi</string>
+    <string name="begin">Comenzar</string>
+    <string name="circles">Círculos</string>
+    <string name="crosses">Cruces</string>
+    <string name="enter_name">Ingrese su nombre</string>
+    <string name="no_name">Extraño</string>
+    <string name="player_1">Jugador 1</string>
+    <string name="player_1_plays_with">Jugador 1 juega con:</string>
+    <string name="player_2">Jugador 2</string>
+    <string name="player_2_name">Una máquina Android</string>
+    <string name="plays_with">Juega con</string>
+    <string name="restart">Reiniciar</string>
+    <string name="result_draw">Empataste</string>
+    <string name="result_lose">Perdiste =(</string>
+    <string name="result_won">Ganaste =)</string>
+    <string name="turn_of">Turno de: </string>
+    <string name="welcome">Bienvenido</string>
+</resources>
